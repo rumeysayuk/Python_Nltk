@@ -58,18 +58,3 @@ print(cleanUpData(text))
 news_dataset["cleared_text_token"] = news_dataset["cleared_text"].apply(lambda x: x.split())
 print(news_dataset.head(10))
 
-# Tutarlılık Skoru
-# from gensim.models import CoherenceModel
-#
-# konu_sayisi_aralik_listesi = range(9, 30, 3)
-# tutarlılık_skolar_list = list()
-# konu_sayisi_list = ()
-#
-# for konu_ssyisi in konu_sayisi_aralik_listesi:
-#     lda_model = gensim.models.ldamodel.LdaModel(corpus=dokuman_terim_matrisi, id2word=kelime_listesi,
-#                                                 num_topics=konu_sayisi, passes=10)
-#     tutarlılık_model_lda = CoherenceModel(model=lda_model, texts=tokenlestirilmis_metinler,
-#                                           dictionary=kelime_listesi, coherence='c_v')
-#     gecici_tutarlilik_Skoru_lda = tutarlılık_model_lda.get_coherence()
-#     tutarlılık_skolar_list.append(gecici_tutarlilik_Skoru_lda)
-#     konu_sayisi_list.append(konu_sayisi)
